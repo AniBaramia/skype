@@ -1,0 +1,30 @@
+<div class="chat-container">
+  <div class="body">
+    <div class="text" *ngFor="let text of texts">
+      {{ text.body }}
+    </div>
+  </div>
+
+  <div class="message-box" *ngIf="friendId">
+    <div class="message-box">
+      <div class="message">
+        <input
+          name="message"
+          placeholder="put your message here"
+          [(ngModel)]="msg"
+        />
+      </div>
+      <div class="icons">
+        <div class="send" (click)="sendOnClick()">
+          <img src="https://cdn-icons-png.flaticon.com/512/3106/3106794.png" />
+        </div>
+        <div class="smiles">
+          <img src="https://cdn-icons-png.flaticon.com/512/1441/1441204.png" />
+        </div>
+        <div class="links">
+          <img src="https://cdn-icons-png.flaticon.com/512/9762/9762302.png" />
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

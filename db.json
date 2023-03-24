@@ -1,0 +1,62 @@
+{
+  "users": [
+    {
+      "firstname": "Ani",
+      "lastname": "Baramia",
+      "username": "ani_baramia",
+      "password": "ani",
+      "id": 1
+    },
+    {
+      "firstname": "Gio",
+      "lastname": "Tabidze",
+      "username": "gio_tabidze",
+      "password": "gio",
+      "id": 2
+    }
+  ],
+  "friends": [
+    {
+      "username": "gio_tabidze",
+      "userId": "1",
+      "id": 1
+    },
+    {
+      "username": "marcho_qarcho",
+      "userId": "1",
+      "id": 2
+    },
+    {
+      "username": "kunka",
+      "userId": "1",
+      "id": 3
+    },
+    {
+      "username": "ani_baramia",
+      "userId": "2",
+      "id": 6
+    },
+    {
+      "username": "gio_kurto",
+      "userId": "2",
+      "id": 7
+    },
+    {
+      "username": "datuuuu",
+      "userId": "2",
+      "id": 8
+    }
+  ],
+  "chat": [
+    {
+      "body": "ჩემოოოოოოოო კუმბიიიიიროოოოოოოოოო <3 ",
+      "friendId": "1",
+      "id": 1
+    },
+    {
+      "body": "ჩეეეეეეეეემო კურკუმელოოოოოოოოო <3 ",
+      "friendId": "6",
+      "id": 2
+    }
+  ]
+}

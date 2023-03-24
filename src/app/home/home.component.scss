@@ -1,0 +1,15 @@
+body {
+  width: 1400px;
+  height: calc(100vh - 120px);
+  margin: auto;
+  display: flex;
+}
+.friendlist-container {
+  width: 400px;
+  height: calc(100vh - 120px);
+}
+
+.chat-container {
+  width: 1000px;
+  height: calc(100vh - 120px);
+}

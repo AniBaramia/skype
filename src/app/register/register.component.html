@@ -1,0 +1,26 @@
+<form #register="ngForm">
+  <div class="container">
+    <div class="ttl">
+      <h1>Sign up</h1>
+    </div>
+    <input name="name" placeholder="First Name" [(ngModel)]="user.firstname" />
+    <input
+      name="username"
+      placeholder="Last Name"
+      [(ngModel)]="user.lastname"
+    />
+    <input name="username" placeholder="Username" [(ngModel)]="user.username" />
+    <input
+      type="password"
+      name="password"
+      placeholder="Password"
+      [(ngModel)]="user.password"
+    />
+    <div>
+      <button type="submit" (click)="registerOnClick(user)">
+        Create an account
+      </button>
+    </div>
+    <div class="create" routerLink="/login">Already have an account?</div>
+  </div>
+</form>

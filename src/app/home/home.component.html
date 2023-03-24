@@ -1,0 +1,8 @@
+<body>
+  <div class="friendlist-container">
+    <app-friend-list (selected)="onSelectedFriend($event)"></app-friend-list>
+  </div>
+  <div class="chat-container">
+    <app-chat [friendId]="selectedFriendId"></app-chat>
+  </div>
+</body>

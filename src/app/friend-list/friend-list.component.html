@@ -1,0 +1,62 @@
+<div class="friendlist-container">
+  <div class="about-user">
+    <div class="user">
+      <div>
+        <img src="https://cdn-icons-png.flaticon.com/512/3237/3237472.png" />
+      </div>
+      <div class="user-info">
+        {{ userInfo }}
+      </div>
+    </div>
+    <div class="btn">
+      <button (click)="addOnClick()">
+        <img src="https://cdn-icons-png.flaticon.com/512/760/760847.png" />
+      </button>
+      <button (click)="logOutOnClick()">
+        <img src="https://cdn-icons-png.flaticon.com/512/4034/4034536.png" />
+      </button>
+    </div>
+  </div>
+
+  <div class="allfriends" *ngFor="let friend of friends">
+    <div
+      class="friend"
+      [class.selected]="friend.id == selectedFriendId"
+      (click)="clickOnFriend(friend)"
+    >
+      <img src="https://cdn-icons-png.flaticon.com/512/4406/4406169.png" />
+      {{ friend.username }}
+    </div>
+    <div class="delete" (click)="deleteOnClick(friend.id)">
+      <img src="https://cdn-icons-png.flaticon.com/512/3388/3388974.png" />
+    </div>
+  </div>
+</div>
+
+<div>
+  <form #popup="ngForm">
+    <div class="popup-container" *ngIf="popupvisibility">
+      <div class="popupttl">Add New Friend</div>
+      <input
+        class="newFriend"
+        name="name"
+        type="text"
+        [(ngModel)]="username"
+        [required]="true"
+      />
+      <div class="popup-btns">
+        <button type="button" class="cancel" (click)="canelOnClick()">
+          CANCEL
+        </button>
+        <button
+          type="submit"
+          class="create"
+          (click)="createOnClick()"
+          [disabled]="!username"
+        >
+          CREATE
+        </button>
+      </div>
+    </div>
+  </form>
+</div>
