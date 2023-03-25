@@ -3,7 +3,7 @@
   margin-bottom: 48px;
 }
 .container {
-  width: 540px;
+  width: 480px;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -13,14 +13,6 @@
   padding: 24px;
   gap: 32px;
   align-items: center;
-
-  input {
-    width: 480px;
-    border: none;
-    border-bottom: 1px solid #087db3;
-    padding: 8px 4px;
-    font-size: 16px;
-  }
 
   button {
     margin-top: 48px;

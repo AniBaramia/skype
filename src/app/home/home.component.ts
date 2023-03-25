@@ -33,6 +33,5 @@ export class HomeComponent implements OnInit {
 
   onSelectedFriend(friendId: number) {
     this.selectedFriendId = friendId;
-    this.router.navigate(['home', friendId]);
   }
 }

@@ -12,6 +12,7 @@ import { RouterModule } from '@angular/router';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { HeaderComponent } from './header/header.component';
+import { UiInputComponent } from './ui-input/ui-input.component';
 
 @NgModule({
   declarations: [
@@ -22,6 +23,7 @@ import { HeaderComponent } from './header/header.component';
     FriendListComponent,
     ChatComponent,
     HeaderComponent,
+    UiInputComponent,
     
   ],
   imports: [

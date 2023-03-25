@@ -6,7 +6,7 @@ import { User } from 'src/assets/user';
 @Component({
   selector: 'app-register',
   templateUrl: './register.component.html',
-  styleUrls: ['./register.component.scss'],
+  styleUrls: ['./register.component.scss', '../styles/input.scss'],
 })
 export class RegisterComponent implements OnInit {
   user: User = {};

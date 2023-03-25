@@ -6,7 +6,7 @@ import { Friend } from 'src/assets/user';
 @Component({
   selector: 'app-friend-list',
   templateUrl: './friend-list.component.html',
-  styleUrls: ['./friend-list.component.scss'],
+  styleUrls: ['./friend-list.component.scss', '../styles/input.scss'],
 })
 export class FriendListComponent implements OnInit {
   @Output()
@@ -43,10 +43,10 @@ export class FriendListComponent implements OnInit {
       this.selectedFriendId = +id;
       this.selected.emit(+id);
     }
-    this.getFriend();
+    this.getFriends();
   }
 
-  getFriend() {
+  getFriends() {
     this.httpClient
       .get('http://localhost:3000/friends?userId=' + this.authUserId)
       .subscribe((response) => {
@@ -74,7 +74,7 @@ export class FriendListComponent implements OnInit {
       })
       .subscribe(() => {
         this.popupvisibility = false;
-        this.getFriend();
+        this.getFriends();
       });
   }
   logOutOnClick() {
@@ -84,6 +84,6 @@ export class FriendListComponent implements OnInit {
   deleteOnClick(id: number) {
     this.httpClient
       .delete('http://localhost:3000/friends/' + id)
-      .subscribe(() => this.getFriend());
+      .subscribe(() => this.getFriends());
   }
 }

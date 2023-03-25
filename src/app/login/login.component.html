@@ -11,9 +11,11 @@
       placeholder="Password"
       [(ngModel)]="user.password"
     />
+    
     <div>
       <button type="submit" (click)="signInOnClick(user)">Sign in</button>
     </div>
+
     <div class="create" routerLink="/register">Create an account</div>
   </div>
 </form>

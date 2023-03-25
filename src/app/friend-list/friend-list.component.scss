@@ -27,9 +27,8 @@
   .delete {
     margin: 20px 8px;
     cursor: pointer;
-    img{
+    img {
       height: 16px;
-
     }
   }
 }
@@ -92,12 +91,6 @@
     margin-bottom: 24px;
   }
 
-  .newFriend {
-    border: none;
-    border-bottom: 2px solid #087db3;
-    width: 312px;
-    margin: 8px 0px;
-  }
   .popup-btns {
     display: flex;
     justify-content: end;

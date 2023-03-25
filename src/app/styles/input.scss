@@ -1,0 +1,16 @@
+input:focus {
+    border-bottom: 2px solid #076590;
+  }
+
+  input {
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #087db3;
+    padding: 8px 4px;
+    font-size: 16px;
+    outline: none;
+  }
+  
+  input.red{
+    border-color: red;
+  }
